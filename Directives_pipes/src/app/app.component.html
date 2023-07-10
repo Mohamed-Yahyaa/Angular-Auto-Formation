@@ -2,6 +2,8 @@
 
 
 
+<h3> ngIf </h3>
+
 <div *ngIf="success_msg; else error_msg "> 
 
   user successfully
@@ -12,6 +14,22 @@
   user was not added
 
 </ng-template>
+
+
+<h3> ngFor </h3> 
+
+<ul>
+  <li *ngFor="let contact of contacts; index as i">
+
+    <div> 
+
+   {{i}}   {{contact.FirstName}}      {{contact.LastName}}
+
+  </div>
+  </li>
+</ul>
+
+
 
 
 
