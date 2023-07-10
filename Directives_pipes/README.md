@@ -41,7 +41,9 @@ These are used to modify the structure of the DOM by adding or removing elements
 
 
       - ngIf : <div *ngIf="isLoggedIn">Welcome, user!</div>
-      
+
+
+
 
       - ngFor : is a structural directive in Angular that allows you to iterate over a collection and render a template for each element. The directive provides a way to access the current item, the index, and the total count of items.
 
@@ -49,6 +51,12 @@ These are used to modify the structure of the DOM by adding or removing elements
       - ngFor :         <ul>
                              <li *ngFor="let item of items; let i = index; let total = count">{{item.name}} ({{i+1}} of {{total}})</li>
                          </ul>
+
+
+
+
+      - ngSwitch : is a structural directive in Angular that allows you to conditionally render an element or a group of elements based on a value. The directive evaluates the value against a set of case statements and renders the matching template.   
+
 
       - ngSwitch :   <div [ngSwitch]="userRole">
                      <div *ngSwitchCase="'admin'">Welcome, admin!</div>
