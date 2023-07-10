@@ -26,6 +26,20 @@ These are used to modify the structure of the DOM by adding or removing elements
 
       - Structural directives are a type of directive in Angular that allow you to modify the structure of the DOM by adding, removing, or manipulating elements based on a condition. The most commonly used structural directives are *ngIf, *ngFor, and *ngSwitch.
 
+      
+
+      - ngIf : ngIf is a structural directive in Angular that allows you to conditionally render an element or a group of elements based on a boolean expression. If the expression is true, the element is displayed, otherwise it is removed from the DOM.
+
+
+      - ngIf -> done
+             -> logical opeartors
+                        OR (11)
+                        AND (&&)
+                        NOT (!)
+                 ngIf else ->
+                 ngIf then else
+
+
       - ngIf : <div *ngIf="isLoggedIn">Welcome, user!</div>
 
       - ngFor :         <ul>
