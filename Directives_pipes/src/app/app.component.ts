@@ -8,12 +8,27 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Directives_pipes';
 
+  // ngIf //
   success_msg = false;
 
+// ngSwitch //
   sopranos = 'Tony Soprano' ;
 
+// ngStyle //
   stylepro = "purple";
 
+  // ngClass //
+
+  styleClsProp = 'C3';
+
+  condClsProp = 'C6';
+
+  getClsName(){
+     return 'C3';
+  }
+
+
+// ngFor
   contacts =[
     {
       'FirstName' : 'El mliki ',

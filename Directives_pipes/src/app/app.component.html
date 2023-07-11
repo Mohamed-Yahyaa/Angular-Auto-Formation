@@ -1,6 +1,7 @@
 <h1> Directive And Pipes </h1>
 
 
+<!-- ngIf -->
 
 <h3> ngIf </h3>
 
@@ -15,6 +16,7 @@
 
 </ng-template>
 
+<!-- ngFor -->
 
 <h3> ngFor </h3> 
 
@@ -29,6 +31,7 @@
   </li>
 </ul>
 
+<!-- ngSwitch -->
 
 <h3> ngSwitch </h3>
 
@@ -42,13 +45,32 @@
 
 </div>
 
-
+<!-- ngStyle -->
 
 <h3> ngStyle </h3>
 
 <div [ngStyle]="{'background-color':'green','color': '#fff'}"> this is green div   </div>
 
 <div [ngStyle]="{'background-color':stylepro}"> this is purbel div   </div>
+
+
+<!-- ngClass -->
+
+<h3> ngClass </h3>
+
+<div [ngClass]="'C1'"> this is class   </div>
+
+<div [ngClass]="styleClsProp"> this is class dynamic  </div>
+
+<div [ngClass]="condClsProp === 'C4'? 'C4' : 'C5'"> this is class dynamic  </div>
+
+<div [ngClass]="{C4 : true, C5: false}"> this is class dynamic  </div>
+
+<div [ngClass]="[getClsName()]" > this is get class  </div>
+
+
+
+
 
 
 
