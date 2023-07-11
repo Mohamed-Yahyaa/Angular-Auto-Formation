@@ -10,6 +10,8 @@ export class AppComponent {
 
   success_msg = false;
 
+  sopranos = 'Tony Soprano' ;
+
   contacts =[
     {
       'FirstName' : 'El mliki ',
