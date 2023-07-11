@@ -28,7 +28,7 @@ These are used to modify the structure of the DOM by adding or removing elements
 
 
 
-      - ngIf : is a structural directive in Angular that allows you to conditionally render an element or a group of elements based on a boolean expression. If the expression is true, the element is displayed, otherwise it is removed from the DOM.
+      - ngIf :   is a structural directive in Angular that allows you to conditionally render an element or a group of elements based on a boolean expression. If the expression is true, the element is displayed, otherwise it is removed from the DOM.
 
 
       - ngIf -> done
@@ -45,7 +45,7 @@ These are used to modify the structure of the DOM by adding or removing elements
 
 
 
-      - ngFor : is a structural directive in Angular that allows you to iterate over a collection and render a template for each element. The directive provides a way to access the current item, the index, and the total count of items.
+      - ngFor :   is a structural directive in Angular that allows you to iterate over a collection and render a template for each element. The directive provides a way to access the current item, the index, and the total count of items.
 
 
       - ngFor :         <ul>
@@ -55,7 +55,7 @@ These are used to modify the structure of the DOM by adding or removing elements
 
 
 
-      - ngSwitch : is a structural directive in Angular that allows you to conditionally render an element or a group of elements based on a value. The directive evaluates the value against a set of case statements and renders the matching template.   
+      - ngSwitch :  is a structural directive in Angular that allows you to conditionally render an element or a group of elements based on a value. The directive evaluates the value against a set of case statements and renders the matching template.   
 
 
       - ngSwitch :   <div [ngSwitch]="userRole">
@@ -63,6 +63,17 @@ These are used to modify the structure of the DOM by adding or removing elements
                      <div *ngSwitchCase="'user'">Welcome, user!</div>
                      <div *ngSwitchDefault>Welcome, guest!</div>
                      </div>   
+
+
+      - ngStyle :  is a built-in directive in Angular that allows you to dynamically set CSS styles for an element based on values in your component's class. It can be used to apply styles based on conditions or to provide a more dynamic user experience.
+
+                   The ngStyle directive takes an object literal as its value, where the keys are CSS property names and the values are the values for those properties. For example, you could use the ngStyle directive to set the background color of an element based on a condition  
+
+
+                             
+                  <div [ngStyle]="{'background-color':'green','color': '#fff'}"> this is green div   </div>
+
+                  <div [ngStyle]="{'background-color':stylepro}"> this is purbel div   </div>
 
 
       - In all of these examples, the * symbol before the directive name is a shorthand notation that allows you to apply the directive to the host element without wrapping it in an additional element. For example, *ngIf is equivalent to <ng-template [ngIf]="condition"><div>...</div></ng-template>, but without the need for the additional ng-template element.              

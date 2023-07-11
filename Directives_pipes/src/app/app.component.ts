@@ -12,6 +12,8 @@ export class AppComponent {
 
   sopranos = 'Tony Soprano' ;
 
+  stylepro = "purple";
+
   contacts =[
     {
       'FirstName' : 'El mliki ',
