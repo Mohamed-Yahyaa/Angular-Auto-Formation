@@ -1,6 +1,10 @@
 <h1> Directive And Pipes </h1>
 
 
+
+<h2> Directive </h2>
+
+
 <!-- ngIf -->
 
 <h3> ngIf </h3>
@@ -70,9 +74,22 @@
 
 
 
+<h2> Pipes </h2>
 
+<!-- Built-In Pipes -->
 
+<div>{{ lowerCaseExample | lowercase}}</div>
 
+<div>{{ upperCaseExample | uppercase}}</div>
 
+<div>{{ dateExample | date}}</div>
+
+<div>{{ jsonExample | json}}</div>
+
+<div>{{ currencyExample | currency}}</div>
+
+<div>{{ percentExample | percent}}</div>
+
+<div>{{ decimalExample | number}}</div>
 
 <router-outlet></router-outlet>

@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Directives_pipes';
 
+  // Directives  //
+
+
   // ngIf //
   success_msg = false;
 
@@ -50,4 +53,24 @@ export class AppComponent {
 
     }
   ]
+
+      // Pipes // 
+
+      // - Built-In Pipes //
+
+      
+
+  lowerCaseExample = "Angular Tutorial";
+
+  upperCaseExample = "Learning Angular Framework";
+
+  dateExample = Date.now();
+
+  jsonExample = {username :"Tony Soprano" , job : " Boos the Mafia" , experience : 20}
+
+  currencyExample = 250;
+
+  percentExample = 0.5489;
+
+  decimalExample = 2016;
 }
