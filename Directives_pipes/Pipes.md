@@ -38,9 +38,24 @@
         
                             <div>{{ currencyExample | currency : 'MAD'}}</div>
 
-                             <div>{{ dateExample | date : 'short'}}</div>
+                            <div>{{ dateExample | date : 'short'}}</div>
 
 
 
 
 ##  Chaining Pipes 
+
+
+- Using multiple pipes on a data input is called as Chaining Pipes
+
+- We can pass one or more pipes to a data input     {{ dob | date | uppercase }}
+
+- Example :          
+
+                              <div>{{ dateExample | date  | uppercase }}</div>
+
+                              <div>{{ currencyExample | currency : 'MAD' | lowercase }}</div>
+
+
+
+                                            
