@@ -14,19 +14,27 @@
   
    - Examples :              
                              
-                               <div>{{ lowerCaseExample | lowercase}}</div>
+                                <div>{{ lowerCaseExample | lowercase}}</div>     
+                                   <!--Output // angular tutorial -->
 
-                               <div>{{ upperCaseExample | uppercase}}</div>
+                                <div>{{ upperCaseExample | uppercase}}</div>     
+                                <!--Output // LEARNING ANGULAR FRAMEWORK -->
 
-                               <div>{{ dateExample | date}}</div>
+                                <div>{{ dateExample | date}}</div>
+                                  <!--Output // Jul 12, 2023 -->
 
-                               <div>{{ jsonExample | json}}</div>
+                                <div>{{ jsonExample | json}}</div>
+                   <!--Output // { "username": "Tony Soprano", "job": " Boos the Mafia", "experience": 20 } -->
 
-                               <div>{{ currencyExample | currency}}</div>
+                                <div>{{ currencyExample | currency}}</div>
+                                       <!--Output // $250.00 -->
 
-                               <div>{{ percentExample | percent}}</div>
+                                <div>{{ percentExample | percent}}</div>
+                                       <!--Output // 55% -->
 
-                               <div>{{ decimalExample | number}}</div>
+                                <div>{{ decimalExample | number}}</div>
+                                       <!--Output // 2,016 -->
+
 
 
 
@@ -36,9 +44,11 @@
 
 - Example :                 
         
-                            <div>{{ currencyExample | currency : 'MAD'}}</div>
+                               <div>{{ currencyExample | currency : 'MAD'}}</div>
+                                           <!--Output // MAD250.00 -->
 
-                            <div>{{ dateExample | date : 'short'}}</div>
+                               <div>{{ dateExample | date : 'short'}}</div>
+                                   <!--Output // 7/12/23, 3:33 PM -->
 
 
 
@@ -52,10 +62,11 @@
 
 - Example :          
 
-                              <div>{{ dateExample | date  | uppercase }}</div>
+                               <div>{{ dateExample | date  | uppercase }}</div>
+                                        <!--Output // JUL 12, 2023 -->
 
-                              <div>{{ currencyExample | currency : 'MAD' | lowercase }}</div>
-
+                               <div>{{ currencyExample | currency : 'MAD' | lowercase }}</div>
+                                        <!--Output // mad250.00 -->
 
 
                                             
