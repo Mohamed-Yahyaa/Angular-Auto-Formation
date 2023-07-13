@@ -13,19 +13,40 @@ const routes: Routes = [
     component: LoansComponent
     // Output // loans works! //
   },
+  
+// Configure Component Routes //
+
   {
     path: 'loan-types',
-    component:LoanTypesComponent
-     // Output // loan-types works! //
+
+    // Children //
+
+    children:[
+      {
+        path: 'add-loan',component: AddLoanComponent
+      },
+
+      {
+        path: 'edit-loan',component: AddLoanComponent
+      },
+
+      {
+        path: 'delete-loan',component: AddLoanComponent
+      },
+
+    ]
+  },
+  
+ // Redirect //
+  {
+    path: 'add-new-loan',
+    redirectTo: 'add-loan'
   },
   {
-    path: 'add',
-    component: AddLoanComponent,
-    outlet: 'addLoan'
-     // Output // >add-loan works! //
-  }
-   
-  
+    
+  path: 'add-loan',
+  component:AddLoanComponent
+},
 
 ];
 

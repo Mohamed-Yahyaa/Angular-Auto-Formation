@@ -178,11 +178,12 @@ The hash-based strategy uses the URL hash to navigate between routes. When a use
 
 
 
+
 ##  Router Module 
 
  - In Angular, the RouterModule module is a key part of the Angular Router, which is used to handle client-side navigation in single-page applications. The RouterModule module provides a set of APIs for defining routes, handling navigation events, and rendering components based on the current route.
 
- 
+
 
 1. Its a single module and placeholder where all our routes are configured for that particular module 
 
@@ -212,3 +213,39 @@ The hash-based strategy uses the URL hash to navigate between routes. When a use
 
 We can configure routes to redirect route for various paths : Path, Component, redirect To, Children, Outlet, pathMatch
  
+
+
+##  Configure Component Routes
+
+- In Angular, you can configure component routes using the Angular Router module. Component routes define the mapping between URL paths and Angular components, allowing you to navigate between different views in your application without requiring a full page reload.
+
+
+
+                               
+                                  {
+                                       path: 'loan-types',
+                                       children:[
+                                  {
+                                       path: 'add-loan',component: AddLoanComponent
+                                  },
+
+                                  {
+                                       path: 'edit-loan',component: AddLoanComponent
+                                  },
+ 
+                                  {
+                                       path: 'delete-loan',component: AddLoanComponent
+                                  },
+
+                                  ]
+
+                                  {
+                                       path: 'add-new-loan',
+                                       redirectTo: 'add-loan'
+                                  },
+                                  {
+    
+                                       path: 'add-loan',
+                                       component:AddLoanComponent
+                                  },
+                                  },
