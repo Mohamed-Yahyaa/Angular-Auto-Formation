@@ -7,6 +7,10 @@ import { LoansComponent } from './loans/loans.component';
 import { LoanTypesComponent } from './loan-types/loan-types.component';
 import { AddLoanComponent } from './add-loan/add-loan.component';
 
+import {LocationStrategy } from '@angular/common';
+import { HashLocationStrategy } from '@angular/common';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,7 @@ import { AddLoanComponent } from './add-loan/add-loan.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -115,3 +115,33 @@ implement advanced routing scenarios.
 
 The hash-based strategy uses the URL hash to navigate between routes. When a user navigates to a different route, the URL hash changes, but the browser does not reload the page. This strategy is useful for applications that need to support older browsers that do not support the HTML5 pushState API.
 
+
+                    import {LocationStrategy } from '@angular/common';
+                    import { HashLocationStrategy } from '@angular/common';
+                    
+                    providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy}],
+        
+- Example : 
+
+                                        . Angular provies 2 routing strategies
+                                        
+                                                PathLocationStrategy
+
+                                        - Default routing strategy for Angular apps
+                                        - HTML 5 push state URL
+                                        - Examples
+                                        - http://myapp.com/dashboard
+                                          http://myapp.com/user/10
+                                          http://myapp.com/user/10/photos
+                                          http://myapp.com/search?query=abc&state=ka&city=bengaluru
+
+                                           
+                                                HashLocationStrategy 
+        
+                                        - Examples
+                                        - http://myapp.com/#/dashboard
+                                        - http://myapp.com/#/user/10
+                                          http://myapp.com/#/user/10/photos
+                                          http://myapp.com/#/search?query=abc&state=ka&city=bengaluru
+
+
