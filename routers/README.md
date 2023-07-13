@@ -19,11 +19,12 @@ our Angular application
 
 ##  Component Routing
 
--  component routing is implemented using the Angular Router module, which is a powerful and flexible library for handling client-side navigation. The Angular Router allows you to define routes for different components in your application, and it handles the navigation between them.
+- Component routing is implemented using the Angular Router module, which is a powerful and flexible library for handling client-side navigation. The Angular Router allows you to define routes for different components in your application, and it handles the navigation between them.
 
 ● Each component can have its own Routes
 
 Various examples of component routes are:
+
 ● /products
 
 ● /products/view
@@ -60,7 +61,7 @@ Various examples of component routes are:
 
 ## Router Outlet
   
-- the router-outlet directive is used to display the component associated with the current route. It acts as a placeholder where the current component is dynamically loaded based on the URL path.
+- The router-outlet directive is used to display the component associated with the current route. It acts as a placeholder where the current component is dynamically loaded based on the URL path.
 
 
 ● The Router-Outlet is a directive that's available from the router library where the
