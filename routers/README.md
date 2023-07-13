@@ -1,2 +1,55 @@
 # Routers
 
+
+- In Angular, routers are used to navigate between different views of an application. The router is responsible for mapping URLs to components and displaying the appropriate component when the user navigates to a certain URL.
+
+● Routing is a mechanism used by Angular framework to manage the "paths" and
+"routes" of our Angular applications
+● Routing strategy helps in navigation between various views in our Angular
+application
+● Angular framework comes with "Router" Module which has everything we need to
+design, develop and implement routes and navigation links
+Router is a singleton - which means there is ONLY one instance of the router in
+our Angular application
+
+
+##  Component Routing
+
+-  component routing is implemented using the Angular Router module, which is a powerful and flexible library for handling client-side navigation. The Angular Router allows you to define routes for different components in your application, and it handles the navigation between them.
+
+● Each component can have its own Routes
+Various examples of component routes are:
+● /products
+● /products/view
+● /products/add
+● /users
+
+- Example :  
+                                       // Component Routing //
+
+                                   {
+                                         path: 'loans',
+                                         component: LoansComponent
+                                        // Output // loans works! //
+   
+                                    },
+
+                                    {
+                                         path: 'loan-types',
+                                          component:LoanTypesComponent
+                                        // Output // loan-types works! //
+                                    },
+
+                                    {
+                                         path: 'loan/add-loan',
+                                         component: AddLoanComponent
+                                       // Output // >add-loan works! //
+                                    }
+   
+
+
+
+
+## Router Outlet
+  
+- 
