@@ -19,7 +19,7 @@ const routes: Routes = [
      // Output // loan-types works! //
   },
   {
-    path: 'loan/add-loan',
+    path: 'add',
     component: AddLoanComponent
      // Output // >add-loan works! //
   }

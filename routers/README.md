@@ -52,4 +52,12 @@ Various examples of component routes are:
 
 ## Router Outlet
   
-- 
+- the router-outlet directive is used to display the component associated with the current route. It acts as a placeholder where the current component is dynamically loaded based on the URL path.
+
+
+● The Router-Outlet is a directive that's available from the router library where the
+Router inserts the component that gets matched based on the current browser's
+URL.
+● You can add multiple outlets in your Angular application which enables you to
+implement advanced routing scenarios.
+● By default there is always one router outlet defined - in app.component.html
