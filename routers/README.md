@@ -34,7 +34,7 @@ Various examples of component routes are:
 ● /users
 
 - Example :  
-                                       // Component Routing //
+                                       
 
                                    {
                                          path: 'loans',
@@ -88,16 +88,16 @@ implement advanced routing scenarios.
                                       
                                      
 
-                                       <h2>Multiple Router Outlets</h2>
+                                            <h2>Multiple Router Outlets</h2>
 
-                                       <router-outlet name="addLoan"></router-outlet>
+                                      <router-outlet name="addLoan"></router-outlet>
 
                                            <!-- Output // Routers Tutorial -->
 
 
-                                       <router-outlet name="editLoan"></router-outlet>
+                                      <router-outlet name="editLoan"></router-outlet>
 
-                                       <!-- http://localhost:4200/loans(addLoan:add) --> 
+                                      <!--http://localhost:4200/loans(addLoan:add)--> 
 
            <!-- Output // 1- Routers Tutorial 2- loans works! 3- Multiple Router Outlets 4- add-loan works! -->
 
