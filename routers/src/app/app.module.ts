@@ -7,7 +7,7 @@ import { LoansComponent } from './loans/loans.component';
 import { LoanTypesComponent } from './loan-types/loan-types.component';
 import { AddLoanComponent } from './add-loan/add-loan.component';
 
-import {LocationStrategy } from '@angular/common';
+import {LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { HashLocationStrategy } from '@angular/common';
 
 
@@ -22,7 +22,7 @@ import { HashLocationStrategy } from '@angular/common';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
