@@ -292,7 +292,9 @@ In Angular, parametrized routes are defined using the RouterModule and the Route
 - Example : 
 
                               // compenent.html //
-
+                            
+                            
+                            <a routerLink="'/user'">User List</a>
                             <table>
                                  <th>Client Id </th>
                                  <th>FirstName </th>
@@ -302,6 +304,8 @@ In Angular, parametrized routes are defined using the RouterModule and the Route
                                  <td>{{ client.clientId }}</td>
                                  <td>{{ client.firstName }}</td>
                                  <td>{{ client.lastName }}</td>
+                                  <td><a routerLink="['/edit',client.clientId]">Edit</a> | 
+                                  <a routerLink="/delete">Delete</a></td>
                               </tr>
 
                             </table>   
