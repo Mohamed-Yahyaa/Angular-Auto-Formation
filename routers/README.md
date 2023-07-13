@@ -156,10 +156,13 @@ The hash-based strategy uses the URL hash to navigate between routes. When a use
 
 ● Every Angular application has MANDATORY base href
 
-     • Angular application is a SPA (Single Page Architecture) which means there will be
+ • Angular application is a SPA (Single Page Architecture) which means there will be
          only one HTML file
-     •  The default base href is set to "/" the root folder
-     • The Base HREF is present in index.html file for all Angular applications
+ •  The default base href is set to "/" the root folder
+ • The Base HREF is present in index.html file for all Angular applications
+
+
+
 
                      
                       import {LocationStrategy, PathLocationStrategy } from '@angular/common';
