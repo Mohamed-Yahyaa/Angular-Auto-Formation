@@ -179,3 +179,36 @@ The hash-based strategy uses the URL hash to navigate between routes. When a use
 
 
 ##  Router Module 
+
+ - In Angular, the RouterModule module is a key part of the Angular Router, which is used to handle client-side navigation in single-page applications. The RouterModule module provides a set of APIs for defining routes, handling navigation events, and rendering components based on the current route.
+
+ 
+
+1. Its a single module and placeholder where all our routes are configured for that particular module 
+
+2. Each module can have its own routes 
+
+3. During the angular app installation 
+    - we get an option - Do you want to have routing in yoru application? 
+        - it will automatically create the app-routing module file for us 
+
+4. ng g module app-routing --flat --module=app
+
+5. • We need to import modules from the package import { Routes, RouterModule } from '@angular/router";
+
+   • We need to configure route path array in the file const routes: Routes = []; 
+
+   • Then we need to define our module 
+
+   • @NgModule({ 
+
+   • imports: [RouterModule. forRoot(routes)],
+   
+   • exports: [RouterModule] 
+
+   • }) We need to export the module export class AppRoutingModule { } 
+
+   • Import the module in the AppModule file
+
+We can configure routes to redirect route for various paths : Path, Component, redirect To, Children, Outlet, pathMatch
+ 
