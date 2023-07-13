@@ -249,3 +249,82 @@ We can configure routes to redirect route for various paths : Path, Component, r
                                        component:AddLoanComponent
                                   },
                                   },
+
+
+
+
+## Parametrized Routes
+
+- Parametrized routes in Angular allow us to define dynamic routes that can contain variable segments. These variable segments are used to capture dynamic values from the URL, which can then be used by the application to render the appropriate content.
+
+In Angular, parametrized routes are defined using the RouterModule and the Routes array. Each route in the Routes array consists of a path property and a component property. The path property defines the URL pattern for the route, and can contain variable segments that are enclosed in parentheses. These variable segments are then mapped to route parameters, which can be accessed by the application.
+
+
+- Example :   
+  
+                                     
+                                       const routes: Routes = [
+  
+                               {path:'product/:id' , component:ProductComponent}
+
+                                       ]
+                
+
+
+## RouterLink 
+
+- In Angular, RouterLink is a directive that allows us to create links that navigate to different routes in our application. Instead of using the traditional href attribute, we use the routerLink attribute to specify the route we want to navigate to.
+
+
+   • When applied to an element in a template, makes that element a link that initiates navigation to a route.
+
+   • Navigation opens one or more routed components in one or more locations on the page.
+
+   • For e.g
+
+
+
+                                
+                                <a [routerLink]="['/user/bob']"> Some link
+
+
+
+- Example : 
+
+                              // compenent.html //
+
+                            <table>
+                                 <th>Client Id </th>
+                                 <th>FirstName </th>
+                                 <th>LastName </th>
+
+                              <tr *ngFor="let client of clientList">
+                                 <td>{{ client.clientId }}</td>
+                                 <td>{{ client.firstName }}</td>
+                                 <td>{{ client.lastName }}</td>
+                              </tr>
+
+                            </table>   
+
+
+                               // compenent.ts //                             
+                                                
+                            clientList = [
+                            {clientId: 10 , firstName: 'yahya', lastName: 'Med'},
+                            {clientId: 11 , firstName: 'Adnane', lastName: 'Tebbaa'},
+                            {clientId: 12 , firstName: 'Hicham', lastName: 'El Mliki'},
+                            {clientId: 13 , firstName: 'Merraadou', lastName: 'Abderahmane'},
+                            {clientId: 14 , firstName: 'Lharrak', lastName: 'Boutaina'}
+                             ]
+ 
+                               // routing.module.ts //      
+
+
+                               {
+                                path:'client',
+
+                               component: ClientComponent
+
+                               }                       
+                               
+

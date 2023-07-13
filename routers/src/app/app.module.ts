@@ -9,6 +9,10 @@ import { AddLoanComponent } from './add-loan/add-loan.component';
 
 import {LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { HashLocationStrategy } from '@angular/common';
+import { P1Component } from './p1/p1.component';
+import { P2Component } from './p2/p2.component';
+import { ProductComponent } from './product/product.component';
+import { ClientComponent } from './client/client.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { HashLocationStrategy } from '@angular/common';
     AppComponent,
     LoansComponent,
     LoanTypesComponent,
-    AddLoanComponent
+    AddLoanComponent,
+    P1Component,
+    P2Component,
+    ProductComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
