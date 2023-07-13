@@ -20,7 +20,8 @@ const routes: Routes = [
   },
   {
     path: 'add',
-    component: AddLoanComponent
+    component: AddLoanComponent,
+    outlet: 'addLoan'
      // Output // >add-loan works! //
   }
    
