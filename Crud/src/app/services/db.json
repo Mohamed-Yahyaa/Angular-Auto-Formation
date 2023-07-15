@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "FirstName": "Yahya",
+      "LastName": "Med",
+      "Job": "Full Stack Developer",
+      "Email":"Yahya@gmail.com"
+
+    },
+    {
+      "id": 1,
+      "FirstName": "Hicham",
+      "LastName": "El Mliki",
+      "Job": "Full Stack Developer",
+      "Email":"ElMliki@gmail.com"
+
+    },
+    {
+      "id": 1,
+      "FirstName": "Hmed",
+      "LastName": "Rais",
+      "Job": "Front end Developer",
+      "Email":"hmed@gmail.com"
+
+    }
+    
+  ]
+ 
+}
