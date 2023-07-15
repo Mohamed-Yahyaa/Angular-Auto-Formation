@@ -5,26 +5,45 @@
       "FirstName": "Yahya",
       "LastName": "Med",
       "Job": "Full Stack Developer",
-      "Email":"Yahya@gmail.com"
-
+      "Email": "Yahya@gmail.com"
     },
     {
       "id": 1,
       "FirstName": "Hicham",
       "LastName": "El Mliki",
       "Job": "Full Stack Developer",
-      "Email":"ElMliki@gmail.com"
-
+      "Email": "ElMliki@gmail.com"
     },
     {
       "id": 1,
       "FirstName": "Hmed",
       "LastName": "Rais",
       "Job": "Front end Developer",
-      "Email":"hmed@gmail.com"
-
+      "Email": "hmed@gmail.com"
+    },
+    {
+      "FirstName": "yahya",
+      "Email": "ahmed",
+      "password": "yaaadhhdkd",
+      "id": 2
+    },
+    {
+      "FirstName": "yahya",
+      "Email": "ahmed",
+      "password": "yaaadhhdkd",
+      "id": 3
+    },
+    {
+      "FirstName": "Rem enim asperiores ",
+      "Email": "qimanib@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 4
+    },
+    {
+      "FirstName": "Ipsam est ut facili",
+      "Email": "tajun@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 5
     }
-    
   ]
- 
 }

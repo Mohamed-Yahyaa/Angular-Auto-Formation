@@ -1,1 +1,13 @@
-<p>update-form works!</p>
+
+<form [formGroup]="form" >
+
+    <input type="text"  formControlName="FirstName" >
+    <label *ngIf="form?.get('FirstName')?.hasError('required')&&form.get('FirstName')?.touched" [style.color]="'red'" >it required</label>
+    <input type="Email" formControlName="Email">
+    <label *ngIf="form?.get('Email')?.hasError('required')&&form.get('Email')?.touched" [style.color]="'red'" >it required</label>
+    <label *ngIf="form?.get('Email')?.hasError('Email')&&form.get('Email')?.touched" [style.color]="'red'" >email format not correct</label>
+    <input type="password" formControlName="password">
+    <label *ngIf="form?.get('password')?.hasError('required')&&form.get('password')?.touched" [style.color]="'red'" >it required</label>
+    <label *ngIf="form?.get('password')?.hasError('min')&&form.get('password')?.touched" [style.color]="'red'" > min 8 caracters</label>
+    <button type="submit" (click)="Update()" > update</button>
+  </form>

@@ -8,6 +8,7 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { HomeComponent } from './home/home.component';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule ,ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     UpdateFormComponent
   ],
   imports: [
+    FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule
   ],
