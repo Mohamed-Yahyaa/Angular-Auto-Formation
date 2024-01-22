@@ -1,20 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup ,FormBuilder, Validators, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContactsService } from '../services/contacts.service';
+import { OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-update-form',
   templateUrl: './update-form.component.html',
   styleUrls: ['./update-form.component.scss']
 })
-export class UpdateFormComponent {
+export class UpdateFormComponent implements OnDestroy, OnInit {
   form!:FormGroup ;
   data?:any;
   IdGet?: number;
-  role = true
+  private _role = true
+  
   constructor(private FormBuilder:FormBuilder , private route:Router,private service:ContactsService,private routeParams:ActivatedRoute){
 
+  }
+  ngOnDestroy(): void {
+    
   }
 
   validation = Validators.compose([Validators.required])
