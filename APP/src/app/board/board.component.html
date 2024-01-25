@@ -1,0 +1,6 @@
+<section w-full >
+  <!-- row 1 -->
+    <div class="square-container  h-48" *ngFor="let score of boardService.board">
+      <app-score [score]="score" border-blue  > </app-score>
+    </div>
+  </section>

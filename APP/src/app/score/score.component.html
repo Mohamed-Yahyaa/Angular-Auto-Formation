@@ -1,0 +1,8 @@
+<div
+class="game-square rounded-lg border bg-teal-lightest
+shadow-md "
+(click)="changePlayerTurn()"
+[ngClass]="{noClick: GameService.isWinner} "
+>
+<p class="text-grey-darker"> {{score.state}} </p>
+</div>

@@ -1,0 +1,17 @@
+<div class="header">
+  <h1 class="text-center text-orange "
+    *ngIf="GameService.isRunning"
+    [ngClass]="{'text-teal': GameService.player == 'O'}"
+  >
+    {{GameService.player}}'S TURN
+  </h1>
+  <h1 class="text-center text-grey-darker" *ngIf="!GameService.isRunning" >  Tic-Tac-Toe </h1>
+  </div>
+  <app-board></app-board>
+  <h1 class="text-center  text-grey-darker" *ngIf="GameService.winner">  {{GameService.player}} WON </h1>
+
+  <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5 "
+    *ngIf="GameService.isOver"
+    (click)="resetGame()"
+  > Reset
+  </button>
