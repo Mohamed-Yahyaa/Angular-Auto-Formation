@@ -9,5 +9,5 @@
     <input type="password" formControlName="password">
     <label *ngIf="form?.get('password')?.hasError('required')&&form.get('password')?.touched" [style.color]="'red'" >it required</label>
     <label *ngIf="form?.get('password')?.hasError('min')&&form.get('password')?.touched" [style.color]="'red'" > min 8 caracters</label>
-    <button type="submit" (click)="Update()" > update</button>
+    <!-- <button type="submit" (click)="Update()" > update</button> -->
   </form>

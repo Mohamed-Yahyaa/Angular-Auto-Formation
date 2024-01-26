@@ -30,7 +30,7 @@ validation = Validators.compose([Validators.required]);
 
   }
 
-  addUser(){
+  async addUser(){
     //  console.log( this.form.value)
      const data= {
       "FirstName":this.form.value.FirstName,
@@ -40,7 +40,7 @@ validation = Validators.compose([Validators.required]);
   }
     console.log(data);
 
-     this.services.storeData(data).subscribe(value=>{
+     (await this.services.storeData(data)).subscribe(value=>{
       console.log(value);
       this.router.navigate([''])
 
@@ -51,5 +51,5 @@ validation = Validators.compose([Validators.required]);
      )
   }
 
-  
+
 }

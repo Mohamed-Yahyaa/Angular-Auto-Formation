@@ -14,12 +14,12 @@ export class UpdateFormComponent implements OnDestroy, OnInit {
   data?:any;
   IdGet?: number;
   private _role = true
-  
+
   constructor(private FormBuilder:FormBuilder , private route:Router,private service:ContactsService,private routeParams:ActivatedRoute){
 
   }
   ngOnDestroy(): void {
-    
+
   }
 
   validation = Validators.compose([Validators.required])
@@ -51,13 +51,13 @@ export class UpdateFormComponent implements OnDestroy, OnInit {
 
 
 
-  Update(){
-    var id = this.IdGet
-    console.log(this.IdGet)
-    var values = this.form.value
-    this.service.Update(id, values).subscribe(value=>{
-      console.log(value)
-    })
-    this.route.navigate([''])
-  }
+  // Update(){
+  //   var id = this.IdGet
+  //   console.log(this.IdGet)
+  //   var values = this.form.value
+  //   this.service.Update(id, values).subscribe(value=>{
+  //     console.log(value)
+  //   })
+  //   this.route.navigate([''])
+  // }
 }

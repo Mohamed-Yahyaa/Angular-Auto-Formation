@@ -71,12 +71,11 @@ return this.score > 8 || this.winner ? true : false;
   const
   ROW = mode === "row" ? true : false,
   DIST = ROW ? 1 : 3,
-  INK = ROW ? 3 : 1 ,
   NUMTIMES = ROW ? 7 : 3;
 
   for(let i = 0; i<NUMTIMES ; i += DIST){
     let
-    firstScore = board[i], state,
+    firstScore = board[i],
     secondScore = board[i + DIST].state,
     thirdScore = board[i + (DIST * 2)].state;
 
